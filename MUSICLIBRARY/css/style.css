@@ -1,0 +1,41 @@
+@keyframes linija {
+    0% {
+        transform: translateX(-100%);
+    }
+    100% {
+        transform: translateX(100%);
+    }
+}
+
+.linija {
+    position: fixed;
+    width: 100%;
+    height: 2px;
+    background-color: red;
+    animation: linija 10s linear infinite; /* Animacija traje 10 sekundi i ponavlja se beskonačno */
+}
+
+.linija:nth-child(1) {
+    top: 10%;
+    animation-delay: 0s;
+}
+
+.linija:nth-child(2) {
+    top: 30%;
+    animation-delay: 2s;
+}
+
+.linija:nth-child(3) {
+    top: 50%;
+    animation-delay: 4s;
+}
+
+.linija:nth-child(4) {
+    top: 70%;
+    animation-delay: 6s;
+}
+
+.linija:nth-child(5) {
+    top: 90%;
+    animation-delay: 8s;
+}
